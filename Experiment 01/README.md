@@ -98,11 +98,40 @@ Ensure hardware virtualization (Intel VT-x / AMD-V) is enabled in the system BIO
 
 ### Step 2: Install Hypervisor
 
-For this experiment, **KVM/QEMU** was chosen as the virtualization platform (native to Linux), though VirtualBox or VMware Workstation are equally valid options 
+Choose one of the following virtualization platforms based on your host operating system:
+
+#### Option A: KVM/QEMU (Linux Host)
+
+For Linux hosts, **KVM/QEMU** is the native choice with kernel-level virtualization performance.
+
 ```bash
 # Fedora - KVM is often pre-installed
 sudo dnf install @virtualization
+
+# Or use Virt-Manager GUI
+sudo dnf install virt-manager
 ```
+
+#### Option B: Oracle VirtualBox (Windows/Linux/macOS)
+
+VirtualBox is free, open-source, and works across all platforms.
+
+**Windows/macOS:**
+1. Download from https://www.virtualbox.org
+2. Run the installer
+3. Follow the installation wizard
+4. Launch VirtualBox
+
+#### Option C: VMware Workstation (Windows/Linux)
+
+VMware Workstation is a professional-grade virtualization platform.
+
+**Windows:**
+1. Download VMware Workstation Player (free) or Pro (trial) from https://www.vmware.com
+2. Run the installer
+3. Restart system if required
+
+> **Note:** Ensure virtualization is enabled in BIOS/UEFI before running any hypervisor.
 
 ### Step 3: Import/Create Virtual Machine
 
