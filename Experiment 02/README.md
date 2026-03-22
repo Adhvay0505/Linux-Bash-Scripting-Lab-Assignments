@@ -199,25 +199,11 @@ The `pwd` (print working directory) command displays the absolute path of the cu
 
 ---
 
-## Guidelines to Students
+## Tips
 
 - Always refer to `man` pages before using unfamiliar commands
-- Do not change system targets without instructor permission
+- Do not change system targets unless necessary
 - Use auto-completion to reduce typing errors
-- Document command outputs clearly with screenshots
-- Practice commands multiple times to build confidence
-
----
-
-## Performance Metrics
-
-| Criteria | Marks |
-|----------|-------|
-| Execution of basic commands | 30% |
-| Use of help utilities (man, --help) | 30% |
-| Identification of run level / target | 20% |
-| Documentation & screenshots | 20% |
-| **Total** | **100%** |
 
 ---
 
