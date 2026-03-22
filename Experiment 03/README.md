@@ -225,55 +225,33 @@ File and directory management commands were successfully explored and executed. 
 
 ---
 
-## Viva Questions & Answers
+## Viva Questions
 
-### Q1: What is the Linux file system hierarchy?
-The Linux file system is a tree-like structure starting from the root directory `/`. All files and directories branch from this root, including `/home` for user files, `/etc` for configuration, `/var` for variable data, `/bin` for binaries, and `/usr` for user programs.
+8. **What is the Linux command-line interface?**
+   The Linux CLI is a text-based interface that allows users to interact with the operating system by typing commands. It provides precise control over system operations through various command-line utilities.
 
-### Q2: Difference between a file and a directory?
-A **file** stores data (text, images, scripts, binaries) in a single entity, while a **directory** is a special type of file that acts as a container, organizing and grouping files and other directories.
+9. **What is the purpose of man command?**
+   The `man` command displays the manual page for any command, providing detailed documentation including description, syntax, options, and examples for proper command usage.
 
-### Q3: What do file permissions rwx mean?
-- **r (Read)**: Permission to view file contents or list directory contents
-- **w (Write)**: Permission to modify a file or create/delete files in a directory
-- **x (Execute)**: Permission to run a file as a program or access a directory
+10. **Difference between man and --help?**
+    | Aspect | man | --help |
+    |--------|-----|--------|
+    | Format | Formatted pages (pager) | Simple text output |
+    | Detail | Comprehensive documentation | Brief summary |
+    | Navigation | Page-by-page viewing | Scrollable text |
+    | Exit | Press `q` | End of output |
 
-### Q4: How do you change file permissions in Linux?
-Use the `chmod` command with either numeric (755, 644, 700) or symbolic (u+x, g-r, o=rw) notation:
-```bash
-chmod 755 file.txt     # Numeric
-chmod u+x file.txt      # Symbolic - add execute for owner
-```
+11. **What are run levels or systemd targets?**
+    Run levels (System V) and systemd targets define the system's operating state. They control which services and functionality are available, such as single-user mode, multi-user text mode, or graphical multi-user mode.
 
-### Q5: Difference between nano and vi editors?
+12. **What is graphical.target?**
+    `graphical.target` is a systemd target that starts a multi-user system with graphical display manager. It is equivalent to runlevel 5 in classic System V and provides the full GUI desktop environment.
 
-| Aspect | nano | vi |
-|--------|------|----|
-| Difficulty | Beginner-friendly | Advanced |
-| Modes | Single mode | Multiple modes (command, insert, visual) |
-| Interface | Menu-driven with shortcuts displayed | Modal with keyboard commands |
-| Learning curve | Quick to learn | Steeper learning curve |
-| Features | Basic editing | Powerful, feature-rich |
+13. **How does auto-completion help users?**
+    Auto-completion (Tab key) helps users by reducing typing errors, saving time on long command/file names, discovering available commands and options, and completing file paths automatically.
 
-### Q6: What is the difference between `rm` and `rmdir`?
-- `rmdir` only removes **empty directories**
-- `rm` removes **files** and directories (with `-r` flag) regardless of contents
-
-### Q7: What does `ls -l` show?
-The `ls -l` command displays detailed file information including:
-- File type and permissions
-- Number of hard links
-- Owner name
-- Group name
-- File size
-- Last modification date/time
-- File/directory name
-
-### Q8: How do you create multiple files at once?
-```bash
-touch file1.txt file2.txt file3.txt
-```
-The `touch` command with multiple arguments creates all specified empty files.
+14. **What command shows the current working directory?**
+    The `pwd` (print working directory) command displays the absolute path of the current working directory.
 
 ---
 
@@ -281,9 +259,11 @@ The `touch` command with multiple arguments creates all specified empty files.
 
 - Always backup important files before modifying permissions
 - Use `ls -l` frequently to verify file permissions after changes
+- Practice both nano and vi editors to become proficient with both
 - Remember that vi requires specific key sequences to save and exit
 - Use `man` pages for detailed command information
 - Be careful with `rm -r` as it permanently deletes directories and contents
+- Document your work with screenshots
 
 ---
 
