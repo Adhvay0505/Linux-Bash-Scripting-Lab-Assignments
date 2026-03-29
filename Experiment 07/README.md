@@ -159,12 +159,25 @@ Linux user and group management operations were successfully performed. The stud
 ## Viva Questions
 
 - What is the difference between root and normal user?
+  - **Answer:** The root user (UID 0) is the superuser with full administrative privileges and unrestricted access to all files and commands on the system. Normal users have restricted access, typically limited to their own home directory and specific system resources, and require `sudo` or root permissions to perform administrative tasks.
+
 - What is the purpose of groups in Linux?
+  - **Answer:** Groups are used to organize users and simplify permission management. Instead of assigning permissions to each user individually, permissions can be granted to a group, and any user added to that group automatically inherits those permissions.
+
 - Explain `useradd` vs `usermod`.
+  - **Answer:** `useradd` is used to create a new user account from scratch, while `usermod` is used to modify the attributes of an existing user account (e.g., changing their home directory, shell, or group memberships).
+
 - What is sticky bit and where is it used?
+  - **Answer:** The sticky bit is a special permission (represented by `t`) applied to directories. When set, only the file's owner, the directory's owner, or the root user can delete or rename files within that directory. It is commonly used on shared directories like `/tmp` to prevent users from deleting each other's files.
+
 - Difference between `chown` and `chgrp`.
+  - **Answer:** `chown` (change owner) is used to change both the user owner and the group owner of a file or directory. `chgrp` (change group) is specifically used to change only the group ownership of a file or directory.
+
 - How does Linux enforce file ownership?
+  - **Answer:** Linux enforces ownership through the filesystem metadata. Each file/directory is associated with a specific User ID (UID) and Group ID (GID). The kernel checks these IDs against the UID/GID of the process attempting to access the file to determine if the requested operation (read, write, or execute) is permitted based on the file's permission bits.
+
 - Why is user management important in cyber security?
+  - **Answer:** User management is critical for enforcing the "Principle of Least Privilege," ensuring that users only have the minimum access necessary to perform their jobs. It helps prevent unauthorized access, limits the impact of a compromised account, provides accountability through logging, and secures sensitive system data.
 
 ---
 
