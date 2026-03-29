@@ -143,18 +143,6 @@ Different types of Linux shells were identified and a simple Bash shell script u
 
 ---
 
-## Performance Metrics (Out of 100% Marks)
-
-| Criteria | Marks |
-|----------|-------|
-| Identification of shells | 30% |
-| Switching between shells | 30% |
-| Script creation | 20% |
-| Script execution & output | 20% |
-| **Total** | **100%** |
-
----
-
 ## Viva Questions
 
 - **What is a shell in Linux?**

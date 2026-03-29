@@ -178,18 +178,6 @@ Bash shell scripts demonstrating interactive input, positional parameters, arith
 
 ---
 
-## Performance Metrics (Out of 100% Marks)
-
-| Criteria | Marks |
-|----------|-------|
-| Interactive scripting | 30% |
-| Positional parameters | 30% |
-| Arithmetic operations | 20% |
-| Conditions & loops | 20% |
-| **Total** | **100%** |
-
----
-
 ## Viva Questions
 
 - **What is a shell script?**

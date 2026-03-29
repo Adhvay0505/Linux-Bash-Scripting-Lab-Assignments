@@ -131,18 +131,6 @@ Storage devices were successfully identified, mounted, accessed, and unmounted i
 
 ---
 
-## Performance Metrics (Out of 100% Marks)
-
-| Criteria | Marks |
-|----------|-------|
-| Device identification | 30% |
-| Mounting operation | 30% |
-| Unmounting operation | 20% |
-| Documentation & screenshots | 20% |
-| **Total** | **100%** |
-
----
-
 ## Viva Questions
 
 - **What is mounting in Linux?**

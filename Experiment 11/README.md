@@ -144,18 +144,6 @@ Inode information, input/output redirection, piping, and process control command
 
 ---
 
-## Performance Metrics (Out of 100% Marks)
-
-| Criteria | Marks |
-|----------|-------|
-| Inode understanding | 30% |
-| I/O redirection usage | 30% |
-| Piping commands | 20% |
-| Process control & documentation | 20% |
-| **Total** | **100%** |
-
----
-
 ## Viva Questions
 
 - **What is an inode in Linux?**

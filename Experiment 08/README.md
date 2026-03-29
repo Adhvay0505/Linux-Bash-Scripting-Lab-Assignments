@@ -128,18 +128,6 @@ Linux package management operations were successfully performed across Ubuntu an
 
 ---
 
-## Performance Metrics (Out of 100% Marks)
-
-| Criteria | Marks |
-|----------|-------|
-| Package querying | 30% |
-| Package installation & removal | 30% |
-| Understanding dependencies | 20% |
-| Documentation & screenshots | 20% |
-| **Total** | **100%** |
-
----
-
 ## Viva Questions
 
 - **What is a package in Linux?**

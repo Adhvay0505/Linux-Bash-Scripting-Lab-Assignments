@@ -144,18 +144,6 @@ Linux user and group management operations were successfully performed. The stud
 
 ---
 
-## Performance Metrics (Out of 100% Marks)
-
-| Criteria | Marks |
-|----------|-------|
-| User and group creation | 30% |
-| Group assignment & verification | 30% |
-| Ownership & permission management | 20% |
-| Documentation & screenshots | 20% |
-| **Total** | **100%** |
-
----
-
 ## Viva Questions
 
 - What is the difference between root and normal user?

@@ -133,18 +133,6 @@ A shell script was successfully written and executed to automate file creation, 
 
 ---
 
-## Performance Metrics (Out of 100% Marks)
-
-| Criteria | Marks |
-|----------|-------|
-| Directory and file creation | 30% |
-| File copying & manipulation | 30% |
-| Selective content display | 20% |
-| Documentation & screenshots | 20% |
-| **Total** | **100%** |
-
----
-
 ## Viva Questions
 
 - **What is the use of $HOME variable?**
