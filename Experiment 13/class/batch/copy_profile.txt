@@ -1,0 +1,2 @@
+This is the original file.
+Welcome to Linux Bash Scripting Lab.
