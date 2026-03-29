@@ -134,7 +134,7 @@ Different types of Linux shells were identified and a simple Bash shell script u
 
 ---
 
-## Guidelines to Students
+## Tips
 
 - **Shebang:** Always include the shebang line (`#!/bin/bash`) in scripts.
 - **Permissions:** Provide execute permissions before running scripts (`chmod +x`).

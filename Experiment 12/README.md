@@ -168,7 +168,7 @@ Bash shell scripts demonstrating interactive input, positional parameters, arith
 
 ---
 
-## Guidelines to Students
+## Tips
 
 - **Display Manager:** Do not stop or disable the display manager without permission.
 - **Shebang:** Always include the shebang line (`#!/bin/bash`) in scripts.

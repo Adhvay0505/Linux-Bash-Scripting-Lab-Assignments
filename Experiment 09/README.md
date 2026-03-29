@@ -122,7 +122,7 @@ Storage devices were successfully identified, mounted, accessed, and unmounted i
 
 ---
 
-## Guidelines to Students
+## Tips
 
 - **Safety First:** Always unmount devices before removing them physically.
 - **Security:** Do not mount unknown or untrusted devices.

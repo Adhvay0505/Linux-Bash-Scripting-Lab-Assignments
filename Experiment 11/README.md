@@ -135,7 +135,7 @@ Inode information, input/output redirection, piping, and process control command
 
 ---
 
-## Guidelines to Students
+## Tips
 
 - **Critical Processes:** Do not kill critical system processes.
 - **Piping:** Use pipes carefully to avoid unintended outputs.

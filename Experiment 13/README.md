@@ -123,7 +123,7 @@ A shell script was successfully written and executed to automate file creation, 
 
 ---
 
-## Guidelines to Students
+## Tips
 
 - **Path Usage:** Use absolute or `$HOME` paths carefully to ensure correct directory targeting.
 - **Verification:** Verify directory structure after script execution.
