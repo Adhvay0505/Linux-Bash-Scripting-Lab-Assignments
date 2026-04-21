@@ -137,27 +137,28 @@ A shell script was successfully written and executed to display logged-in user c
 
 ---
 
-## Performance Metrics (Out of 100% Marks)
-
-| Criteria | Marks |
-|----------|-------|
-| User login count script | 30% |
-| File listing format | 30% |
-| Job priority & background execution | 20% |
-| Documentation & screenshots | 20% |
-| Total | 100% |
-
----
-
 ## Viva Questions
 
 - How do you count logged-in users in Linux?
+  - **Answer:** Using the `who | wc -l` command. The `who` command lists all logged-in users and `wc -l` counts the number of lines (users).
+
 - What is the purpose of ls -C?
+  - **Answer:** The `ls -C` command lists files in a multi-column format, displaying them arranged in columns from left to right.
+
 - What does the nice command do?
+  - **Answer:** The `nice` command runs a command with a modified scheduling priority. It allows users to set the priority of a process using the `-n` option (e.g., `nice -n 10` sets a lower priority, where higher nice values mean lower priority).
+
 - Difference between foreground and background jobs.
+  - **Answer:** Foreground jobs run in the terminal and block user input until they complete. Background jobs run simultaneously with other processes and don't block the terminal, allowing the user to continue working.
+
 - What is nohup and when is it used?
+  - **Answer:** `nohup` (no hangup) is used to run a command that continues running even after the user logs out or closes the terminal. It ignores the hangup signal, useful for long-running processes.
+
 - How do you list background jobs?
+  - **Answer:** Using the `jobs` command, which displays all background jobs running in the current terminal session along with their job numbers and status.
+
 - How can you stop a background job?
+  - **Answer:** Use `kill %job_number` (e.g., `kill %1`) or find the process ID with `ps` and use `kill PID`. Also, `kill $(jobs -p)` can terminate all background jobs.
 
 ---
 
