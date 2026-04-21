@@ -1,1 +1,167 @@
-# Linux-Bash-Scripting-Lab-Assignments
+# Shell Script for User Login Count, File Listing and Job Control
+
+## Introduction
+
+Linux provides powerful utilities to monitor user activity, manage files, and control process execution priorities. System administrators and cyber security professionals often need to determine how many users are currently logged in, list files in structured formats, and manage jobs running in foreground or background with controlled priorities.
+
+The problem is to write shell scripts that display the number of users logged into the system, list files in a columnar format, and manage job execution using priority and background execution, thereby demonstrating system monitoring and job control through Bash scripting.
+
+---
+
+## Course Outcome Mapping
+
+| CO | Description |
+|----|-------------|
+| CO2 | Ability to write Bash scripts for system monitoring and automation |
+| CO3 | Execution and control of processes and jobs in Linux |
+
+---
+
+## Learning Outcomes
+
+| LO | Description |
+|----|-------------|
+| LO1 | Determine the number of users currently logged into the system |
+| LO2 | Display files in a formatted column list |
+| LO3 | Manage job execution priority using nice |
+| LO4 | Continue running jobs in the background after logout |
+
+---
+
+## Theory
+
+### User Login Monitoring
+
+Linux supports multiple users simultaneously. Commands such as who and users help administrators monitor logged-in users.
+
+### File Listing
+
+The ls command can display files in multiple formats. Using options such as -l and -C, files can be displayed in a structured column layout.
+
+### Job Control
+
+Linux allows processes to run:
+- In the foreground
+- In the background
+
+The nice command adjusts the scheduling priority of a process, and nohup allows a process to continue running after logout.
+
+---
+
+## Commands Reference
+
+| Command | Description |
+|---------|-------------|
+| who | Display logged-in users |
+| wc -l | Count number of lines |
+| ls -C | Display files in columns |
+| nice | Run command with priority |
+| nohup | Run command immune to hangup |
+| jobs | List background jobs |
+| bg | Resume job in background |
+| fg | Resume job in foreground |
+
+---
+
+## Procedure
+
+### A. Writing the Shell Script
+
+1. Open the terminal.
+2. Create a script file:
+   ```
+   nano system_info.sh
+   ```
+3. Enter the following script:
+   ```bash
+   #!/bin/bash
+   echo "Number of users currently logged in:"
+   who | wc -l
+   echo "Files in home directory (column format):"
+   ls -C $HOME
+   echo "Running a job with lower priority:"
+   nice -n 10 sleep 60 &
+   echo "Running a background job that survives logout:"
+   nohup sleep 120 &
+   ```
+4. Save and exit the editor.
+5. Make the script executable:
+   ```
+   chmod +x system_info.sh
+   ```
+
+### B. Executing the Script
+
+6. Run the script:
+   ```
+   ./system_info.sh
+   ```
+
+---
+
+## Sample Execution
+
+```bash
+$ ./system_info.sh
+Number of users currently logged in:
+2
+Files in home directory:
+Desktop Documents Downloads
+[1] 3456
+[2] 3457
+```
+
+---
+
+## Expected Output
+
+- [x] Number of logged-in users displayed correctly.
+- [x] Files listed in column format.
+- [x] Background jobs started with specified priorities.
+- [x] Jobs continue to run independently.
+
+---
+
+## Result
+
+A shell script was successfully written and executed to display logged-in user count, list files in column format, and manage job execution using priority and background processing.
+
+---
+
+## Guidelines to Students
+
+- Avoid running long background jobs unnecessarily.
+- Use nice values carefully; lower values mean higher priority.
+- Monitor background jobs using jobs or ps.
+- Terminate jobs after completion to free system resources.
+
+---
+
+## Performance Metrics (Out of 100% Marks)
+
+| Criteria | Marks |
+|----------|-------|
+| User login count script | 30% |
+| File listing format | 30% |
+| Job priority & background execution | 20% |
+| Documentation & screenshots | 20% |
+| Total | 100% |
+
+---
+
+## Viva Questions
+
+- How do you count logged-in users in Linux?
+- What is the purpose of ls -C?
+- What does the nice command do?
+- Difference between foreground and background jobs.
+- What is nohup and when is it used?
+- How do you list background jobs?
+- How can you stop a background job?
+
+---
+
+## References
+
+- Linux Man Pages: `man who`, `man wc`, `man ls`, `man nice`, `man nohup`, `man jobs`
+- Introduction to Linux with Bash Scripting Lab (Dr. Rajesh Kumar)
