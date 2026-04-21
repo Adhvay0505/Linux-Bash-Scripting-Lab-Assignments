@@ -1,0 +1,5 @@
+Linux: Open-source operating system
+Bash: Shell scripting language
+Kernel: Core of operating system
+File System: Structure for storing data
+Networking: Communication between systems
